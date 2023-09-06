@@ -3,7 +3,7 @@ h1 {
     font-family: 'STIX Two Text', serif;
 }
 
-p {
+p, a {
     color: white;
 }
 
@@ -96,6 +96,5 @@ input:focus {
     border: solid 2px blue;
     outline: none;
     box-shadow: 5px 5px 5px teal;
-    
 
 }
