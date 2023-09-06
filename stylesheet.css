@@ -1,0 +1,101 @@
+h1 {
+    color: white;
+    font-family: 'STIX Two Text', serif;
+}
+
+p {
+    color: white;
+}
+
+.containerHor {
+    display: flex;
+    flex-direction: row;
+}
+
+.containerVer1 {
+    display: flex;
+    width: 40vw;
+    height: 100vh;
+    flex-direction: column;
+    background-image: url(TokyoStructure.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.containerVer2 {
+    width: 60vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.greyBox, .greyBoxLow {
+    display: flex;
+    flex: auto;
+    flex-direction: column;
+    background-color: lightgrey;
+    padding: 20px;
+}
+
+.greyBoxLow {
+    justify-content: flex-end;
+}
+
+.whiteBox {
+    display: flex;
+    flex: auto;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.opaqueBox {
+    display: flex;
+    width: 40vw;
+    margin-top: 120px;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.formContainer label{
+    display: flex;
+    flex-direction: row;
+    font-weight: 250;
+    margin-top: 10px;
+}
+
+.formContainer {
+    margin-right: 100px;
+}
+
+
+.sometext {
+    display: flex;
+}
+
+input[type=submit] {
+    padding: 10px 20px;
+    background-color: #596D48;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    border: solid 1px black;
+    width: 200px;
+}
+
+input {
+    border-color: #E5E7EB ;
+    border-radius: 4px;
+    border: thin 1px;
+}
+
+input:focus {
+    border: solid 2px blue;
+    outline: none;
+    box-shadow: 5px 5px 5px teal;
+    
+
+}

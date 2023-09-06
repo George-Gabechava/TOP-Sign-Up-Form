@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<title>Sign-Up</title>
+<link rel="stylesheet" href="stylesheet.css">
+<script src=""></script>
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@1,600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="containerHor">
+        <div class="containerVer1">
+            <div class="opaqueBox">
+                <div>
+                <img src="odin-lined.png" width="50px" alt="Old Structure on Water">
+                </div>
+                <h1>ODIN</h1>
+            </div>
+            <p>Photo by <a href="https://unsplash.com/@villxsmil">Luis Villasmil</a> on <a href="https://unsplash.com/photos/PFAX9owWRbI">Usplash</a></p>
+        </div>
+
+        
+
+        <div class="containerVer2">
+            <div class="greyBoxLow">
+                <h3>This is not a real online service! Why are you here? 
+                    Well I can't stop you; if you want to sign up, go ahead.</h3>
+                <h3>Sign up below:</h3>
+            </div>
+
+            <div class="whiteBox">
+                <div class="sometext">
+                    <h3>
+                        Fill this out!
+                    </h3>
+                </div>
+                <form>
+                <div class="containerHor">                    
+                    <div class="formContainer">
+                        <div class="form-row">
+                            <label for="firstName">FIRST NAME</label>
+                            <input type="text" id="firstName" name="firstName" required />
+                        </div class="form-row">
+                        <div class="form-row">
+                            <label for="email">EMAIL</label>
+                            <input type="email" id="email" name="email" required />
+                        </div class="form-row">                        
+                        <div class="form-row">
+                            <label for="password">PASSWORD</label>
+                            <input type="password" id="password" name="password" onkeyup='passConfirm();' required />
+                        </div class="form-row">
+                        <span id="passMatch"></span>
+                    </div>
+
+                    <div class="formContainer">
+                        <div class="form-row">
+                            <label for="lastName">LAST NAME</label>
+                            <input type="text" id="lastName" name="lastName" required />
+                        </div class="form-row">
+                        <div class="form-row">
+                            <label for="phone">PHONE NUMBER</label>
+                            <input type="tel" id="phone" name="phone" required />
+                        </div class="form-row">
+                        <div class="form-row">
+                            <label for="confirmPass">CONFIRM PASSWORD</label>
+                            <input type="password" id="confirmPass" name="confirmPass" onkeyup='passConfirm();' required />
+                        </div class="form-row">
+                    </div>
+                </div>
+                
+            </div>
+            <div class="greyBox">
+                <div class="form-row">
+                <input type="submit" value="Create Account" />
+                </div class="form-row">
+
+                </form>
+
+                <h4>
+                    Already have an account? <a href="">Log in</a>
+                </h4>
+            </div>
+
+            
+        </div>
+    </div>
+</body>
+<footer>
+
+
+
+    <script>
+        var passConfirm = function() {
+            if (document.getElementById("password").value ==
+                document.getElementById("confirmPass").value) {
+                document.getElementById("passMatch").style.color = "Green";
+                document.getElementById("passMatch").innerHTML = "Passwords match!"
+            } else {
+                document.getElementById("passMatch").style.color = "Red";
+                document.getElementById("passMatch").innerHTML = "*Passwords do NOT match!"
+            }
+        }
+
+    </script>
+
+</footer>
+</html>
